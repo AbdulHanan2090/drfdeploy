@@ -41,11 +41,7 @@ rsa==4.9
 six==1.16.0
 sqlparse==0.4.4
 tensorboard==2.10.1
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.1
-tensorflow==2.10.1
-tensorflow-estimator==2.10.0
-tensorflow-io-gcs-filesystem==0.31.0
+
 termcolor==2.3.0
 tqdm==4.66.1
 typing_extensions==4.5.0
