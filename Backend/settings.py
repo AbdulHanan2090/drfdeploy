@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-akjqvbxkn-d9s2)3fwuh5uan55z2eeyg+z_3xo3138)%zt1(be'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost','metaschool.herokuapp.com']
 
