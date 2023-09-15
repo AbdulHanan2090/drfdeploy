@@ -13,16 +13,16 @@ from keras.optimizers import SGD
 from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
-# words = []
-# classes = []
-# documents = []
-# ignore_words = ['?', '!']
+words = []
+classes = []
+documents = []
+ignore_words = ['?', '!']
 
 # data_file = open('intents.json', encoding='utf-8').read()
 # intents = json.loads(data_file)
-# nltk.download('punkt')  # unsuperviesd
-# nltk.download('wordnet')  # dict
-# nltk.download('omw-1.4')  # VACABLARY
+nltk.download('punkt')  # unsuperviesd
+nltk.download('wordnet')  # dict
+nltk.download('omw-1.4')  # VACABLARY
 # for intent in intents['intents']:
 #     for pattern in intent['patterns']:
 
