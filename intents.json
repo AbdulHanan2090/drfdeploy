@@ -1630,6 +1630,21 @@
                         ]
                 },
                 {
+                        "tag": "subject_coordinators22",
+                        "patterns": [
+                                "Amena ajami",
+                                "Arabic Coordinator",
+                                "Who is Amena ajami",
+                                "Who is Arabic Coordinator"
+                        ],
+                        "responses": [
+                                "Mrs. Manal Yehya is the Arabic Coordinator"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
                         "tag": "subject_coordinators3",
                         "patterns": [
                                 "Prof. Mohamed Watfa",
@@ -1695,6 +1710,20 @@
                         ],
                         "responses": [
                                 "Mr. Bassem Basma is the Social Sciences Coordinator."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "subject_coordinators8",
+                        "patterns": [
+                                "Susana Jaafar",
+                                "Who is Susana Jaafar?",
+                                "FS Coordinator"
+                        ],
+                        "responses": [
+                                "Mrs. Susana Jaafar is the FS Coordinator."
                         ],
                         "context": [
                                 ""
