@@ -466,7 +466,6 @@
                                 "What are the rules for boys' hairstyles and accessories?",
                                 "What are the guidelines for girls' appearance, including hair and makeup?",
                                 "Do I have to wear a uniform?"
-                        
                         ],
                         "responses": [
                                 "Students at ISI are required to adhere to the following school uniform policies: 1- Wear the school uniform during school hours, activities, and on all school trips.Do not wear caps or headgear unless specified by the administration.On non-sports days, only dark-colored shoes (black, dark blue, or gray) are allowed. Tennis shoes should be worn on sports days.Boys are not permitted to wear long hair or dye it. Hairstyles must be appropriate for school, and earrings are not allowed for boys.Girls are not allowed to dye their hair, wear their hair down, put on makeup, or use nail polish.The school uniform must be purchased directly from the school uniform store before the start of the school year. Please contact school administration for more details."
@@ -577,7 +576,6 @@
                         "tag": "assessment_and_grading",
                         "patterns": [
                                 "How are semester exams structured?"
-                              
                         ],
                         "responses": [
                                 "Cycles 3 & 4 (Grades 7-12) have 4 semester exams, Cycle 2 (Grades 4-5-6) have 2 semester exams (Midterm & Final), while Cycle 1 (Grades 1-2-3) have only one semester exam (Final). Semester Exams are scored out of 100."
@@ -1257,7 +1255,9 @@
                                 "Tell me about the Agenda program.",
                                 "How do Support Periods and Agenda Support work?",
                                 "How do Sp and mean?",
-                                "How do Sp and mean?When do we have them?"
+                                "How do Sp and mean?When do we have them?",
+                                "what is QP?",
+                                "Qp"
                         ],
                         "responses": [
                                 "ISI offers a school support program for both low achievers and high achievers two days per week (Mondays & Wednesdays) during Support Periods (SPs). \nAgenda Support dedicates the last 10 minutes of subject periods to work on items on the agenda due the next day. \nSupport Periods focus on sample exercises and practice questions similar to those assessed in Quiz periods (QPs)."
@@ -1311,7 +1311,7 @@
                 {
                         "tag": "bicycle_information",
                         "patterns": [
-                              "can I get a bicycle to school?"
+                                "can I get a bicycle to school?"
                         ],
                         "responses": [
                                 "Yes you can get bicyle"
@@ -1453,116 +1453,145 @@
                         ]
                 },
                 {
-                        "tag": "management_team",
+                        "tag": "staff_roles1",
                         "patterns": [
-                                "principal",
-                                "Principal and CEO",
-                                "Who is the Principal of ISI?"
+                                "Who is Prof. Mohamed Watfa",
+                                "the Principal & CEO?",
+                                "Tell me about Prof. Mohamed Watfa's role as the Principal & CEO."
                         ],
                         "responses": [
-                                "Prof. Mohamed Watfa is the Principal ISI."
+                                "Prof. Mohamed Watfa is the Principal & CEO."
                         ],
                         "context": [
                                 ""
                         ]
                 },
-                
-                
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Prof. Mohamed Watfa","the Principal & CEO?",
-                            "Tell me about Prof. Mohamed Watfa's role as the Principal & CEO."
-                          ],
-                          "responses": ["Prof. Mohamed Watfa is the Principal & CEO."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Mrs. Maya Othman?",
-                            "Vice Principal?",
-                            "Tell me about Mrs. Maya Othman's role as Vice Principal."
-                          ],
-                          "responses": ["Mrs. Maya Othman is the Vice Principal."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Mrs. Salwa el Kharsa?",
-                            "Kindergarten Head?",
-                            "Tell me about Mrs. Salwa el Kharsa's role as the Kindergarten Head."
-                          ],
-                          "responses": ["Mrs. Salwa el Kharsa is the Kindergarten Head."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Mrs. Asmaa Aisha",
-                            "Elementary Head?",
-                            "Tell me about Mrs. Asmaa Aisha's role as the Elementary Head."
-                          ],
-                          "responses": ["Mrs. Asmaa Aisha is the Elementary Head."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Mr. Munir Adawi", 
-                            "the Middle & Highschool Supervisor?",
-                            "Tell me about Mr. Munir Adawi's role as the Middle & Highschool Supervisor."
-                          ],
-                          "responses": ["Mr. Munir Adawi is the Middle & Highschool Supervisor."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Miss Ashwaq Malwa-AlAin?"
-                            , "the Kindergarten Supervisor?",
-                            "Tell me about Miss Ashwaq Malwa-AlAin's role as the Kindergarten Supervisor."
-                          ],
-                          "responses": ["Miss Ashwaq Malwa-AlAin is the Kindergarten Supervisor."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Miss Susana Jaafar?",
-                            "Middle & Highschool Supervisor and F.S. Coordinator?",
-                            "Tell me about Miss Susana Jaafar's role as the Middle & Highschool Supervisor and F.S. Coordinator."
-                          ],
-                          "responses": [
-                            "Miss Susana Jaafar is the Middle & Highschool Supervisor and F.S. Coordinator."
-                          ],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Miss Dina Khalaf",
-                            "Elementary Supervisor?",
-                            "Tell me about Miss Dina Khalaf's role as the Elementary Supervisor."
-                          ],
-                          "responses": ["Miss Dina Khalaf is the Elementary Supervisor."],
-                          "context": [""]
-                        },
-                        {
-                          "tag": "staff_roles",
-                          "patterns": [
-                            "Who is Miss Siham Awally?",
-                            "Activities Coordinator?",
-                            "Tell me about Miss Siham Awally's role as the Activities Coordinator."
-                          ],
-                          "responses": ["Miss Siham Awally is the Activities Coordinator."],
-                          "context": [""]
-                        },
-                      
-                      
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "staff_roles2",
+                        "patterns": [
+                                "Who is maya Othman?",
+                                "Vice Principal?",
+                                "vp"
+                        ],
+                        "responses": [
+                                "Mrs. Maya Othman is the Vice Principal."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles3",
+                        "patterns": [
+                                "Who is Mrs. Salwa el Kharsa?",
+                                "Kindergarten Head?",
+                                "Tell me about Mrs. Salwa el Kharsa's role as the Kindergarten Head.",
+                                "kh"
+
+                        ],
+                        "responses": [
+                                "Mrs. Salwa el Kharsa is the Kindergarten Head."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles4",
+                        "patterns": [
+                                "Who is Mrs. Asmaa Aisha",
+                                "Elementary Head?",
+                                "eh"
+                        ],
+                        "responses": [
+                                "Mrs. Asmaa Aisha is the Elementary Head."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles5",
+                        "patterns": [
+                                "Who is Mr. Munir Adawi",
+                                "Middle & Highschool Supervisor?",
+                                "Highschool Supervisor?",
+                                "Highschool Supervisor?",
+                                "hs",
+                                "ms"
+                        
+                        ],
+                        "responses": [
+                                "Mr. Munir Adawi is the Middle & Highschool Supervisor."
+
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles6",
+                        "patterns": [
+                                "Who is Miss Ashwaq Malwa-AlAin?",
+                                "Kindergarten Supervisor?",
+                                "Tell me about Miss Ashwaq Malwa-AlAin's role as the Kindergarten Supervisor.",
+                                "ks"
+                        ],
+                        "responses": [
+                                "Miss Ashwaq Malwa-AlAin is the Kindergarten Supervisor."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles7",
+                        "patterns": [
+                                "Who is Miss Susana Jaafar?",
+                                "Middle & Highschool Supervisor and F.S. Coordinator?",
+                                "F.S Coordinator?",
+                                "Fs",
+                                "Tell me about Miss Susana Jaafar's role as the Middle & Highschool Supervisor and F.S. Coordinator."
+                        ],
+                        "responses": [
+                                "Miss Susana Jaafar is the Middle & Highschool Supervisor and F.S. Coordinator."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles8",
+                        "patterns": [
+                                "Who is Miss Dina Khalaf",
+                                "Elementary Supervisor?",
+                                "Tell me about Miss Dina Khalaf's role as the Elementary Supervisor.",
+                                "es"
+                        ],
+                        "responses": [
+                                "Miss Dina Khalaf is the Elementary Supervisor."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "staff_roles9",
+                        "patterns": [
+                                "Who is Miss Siham Awally?",
+                                "Activities Coordinator?",
+                                "Ac",
+                                "Tell me about Miss Siham Awally's role as the Activities Coordinator."
+                        ],
+                        "responses": [
+                                "Miss Siham Awally is the Activities Coordinator."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "subject_coordinators1",
                         "patterns": [
                                 "Mrs. Rafif Fakih",
                                 "English Coordinator"
@@ -1575,7 +1604,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators2",
                         "patterns": [
                                 "Mrs. Manal Yehya",
                                 "Math/Logic Coordinator"
@@ -1588,7 +1617,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators3",
                         "patterns": [
                                 "Prof. Mohamed Watfa",
                                 "Innovation & Technology Coordinator"
@@ -1601,7 +1630,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators4",
                         "patterns": [
                                 "Mr. Munir Adawi",
                                 "Chemistry Coordinator"
@@ -1614,7 +1643,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators5",
                         "patterns": [
                                 "Miss Zeina Al Yousef",
                                 "Science Coordinator"
@@ -1627,7 +1656,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators6",
                         "patterns": [
                                 "Miss Faten Fardoun",
                                 "Biology Coordinator"
@@ -1640,7 +1669,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators7",
                         "patterns": [
                                 "Mr. Bassem Basma",
                                 "Social Sciences Coordinator"
@@ -1653,7 +1682,7 @@
                         ]
                 },
                 {
-                        "tag": "subject_coordinators",
+                        "tag": "subject_coordinators8",
                         "patterns": [
                                 "Mrs. Susana Jaafar",
                                 "FS Coordinator"
