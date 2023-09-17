@@ -1470,6 +1470,7 @@
                         "tag": "staff_roles2",
                         "patterns": [
                                 "Who is maya Othman?",
+                                "maya Othman",
                                 "Vice Principal?",
                                 "vp"
                         ],
@@ -1483,7 +1484,8 @@
                 {
                         "tag": "staff_roles3",
                         "patterns": [
-                                "Who is Mrs. Salwa el Kharsa?",
+                                "Who is Salwa el Kharsa?",
+                                "Salwa el Kharsa",
                                 "Kindergarten Head?",
                                 "Tell me about Mrs. Salwa el Kharsa's role as the Kindergarten Head.",
                                 "kh"
@@ -1499,7 +1501,8 @@
                 {
                         "tag": "staff_roles4",
                         "patterns": [
-                                "Who is Mrs. Asmaa Aisha",
+                                "Who is Asmaa Aisha?",
+                                "Asmaa Aisha",
                                 "Elementary Head?",
                                 "eh"
                         ],
@@ -1513,7 +1516,8 @@
                 {
                         "tag": "staff_roles5",
                         "patterns": [
-                                "Who is Mr. Munir Adawi",
+                                "Who is Munir Adawi?",
+                                "Munir Adawi",
                                 "Middle & Highschool Supervisor?",
                                 "Highschool Supervisor?",
                                 "Highschool Supervisor?",
@@ -1533,6 +1537,7 @@
                         "tag": "staff_roles6",
                         "patterns": [
                                 "Who is Miss Ashwaq Malwa-AlAin?",
+                                "Ashwaq Malwa-AlAin",
                                 "Kindergarten Supervisor?",
                                 "Tell me about Miss Ashwaq Malwa-AlAin's role as the Kindergarten Supervisor.",
                                 "ks"
@@ -1548,10 +1553,11 @@
                         "tag": "staff_roles7",
                         "patterns": [
                                 "Who is Miss Susana Jaafar?",
+                                "Susana Jaafar",
                                 "Middle & Highschool Supervisor and F.S. Coordinator?",
                                 "F.S Coordinator?",
                                 "Fs",
-                                "Tell me about Miss Susana Jaafar's role as the Middle & Highschool Supervisor and F.S. Coordinator."
+                                "Tell me about Susana Jaafar's role as the Middle & Highschool Supervisor and F.S. Coordinator."
                         ],
                         "responses": [
                                 "Miss Susana Jaafar is the Middle & Highschool Supervisor and F.S. Coordinator."
@@ -1564,6 +1570,7 @@
                         "tag": "staff_roles8",
                         "patterns": [
                                 "Who is Miss Dina Khalaf",
+                                "Dina Khalaf",
                                 "Elementary Supervisor?",
                                 "Tell me about Miss Dina Khalaf's role as the Elementary Supervisor.",
                                 "es"
@@ -1578,7 +1585,8 @@
                 {
                         "tag": "staff_roles9",
                         "patterns": [
-                                "Who is Miss Siham Awally?",
+                                "Who is Siham Awally?",
+                                "Siham Awally?",
                                 "Activities Coordinator?",
                                 "Ac",
                                 "Tell me about Miss Siham Awally's role as the Activities Coordinator."
@@ -1593,7 +1601,10 @@
                 {
                         "tag": "subject_coordinators1",
                         "patterns": [
-                                "Mrs. Rafif Fakih",
+                                "rafif fakih",
+                                "Who is rafif fakih?",
+                              
+                                
                                 "English Coordinator"
                         ],
                         "responses": [
@@ -1606,8 +1617,10 @@
                 {
                         "tag": "subject_coordinators2",
                         "patterns": [
-                                "Mrs. Manal Yehya",
-                                "Math/Logic Coordinator"
+                                "Manal Yehya",
+                                "Math/Logic Coordinator",
+                                "Who is Manal Yehya ",
+                                "Who is Math/Logic Coordinator"
                         ],
                         "responses": [
                                 "Mrs. Manal Yehya is the Math/Logic Coordinator."
@@ -1632,8 +1645,10 @@
                 {
                         "tag": "subject_coordinators4",
                         "patterns": [
-                                "Mr. Munir Adawi",
+                                "Munir Adawi",
+                                "Who is Munir Adawi ",
                                 "Chemistry Coordinator"
+
                         ],
                         "responses": [
                                 "Mr. Munir Adawi is the Chemistry Coordinator."
@@ -1645,7 +1660,8 @@
                 {
                         "tag": "subject_coordinators5",
                         "patterns": [
-                                "Miss Zeina Al Yousef",
+                                "Zeina Al Yousef",
+                                "Who is Zeina Al Yousef?",
                                 "Science Coordinator"
                         ],
                         "responses": [
@@ -1658,8 +1674,10 @@
                 {
                         "tag": "subject_coordinators6",
                         "patterns": [
-                                "Miss Faten Fardoun",
+                                "Faten Fardoun",
+                                "Who is Faten Fardoun?",
                                 "Biology Coordinator"
+
                         ],
                         "responses": [
                                 "Miss Faten Fardoun is the Biology Coordinator."
@@ -1671,7 +1689,8 @@
                 {
                         "tag": "subject_coordinators7",
                         "patterns": [
-                                "Mr. Bassem Basma",
+                                "Bassem Basma",
+                                "Who is Bassem Basma?",
                                 "Social Sciences Coordinator"
                         ],
                         "responses": [
@@ -1684,7 +1703,8 @@
                 {
                         "tag": "subject_coordinators8",
                         "patterns": [
-                                "Mrs. Susana Jaafar",
+                                "Susana Jaafar",
+                                "Who is Susana Jaafar?",
                                 "FS Coordinator"
                         ],
                         "responses": [
