@@ -1693,6 +1693,334 @@
                         "context": [
                                 ""
                         ]
+                },
+                {
+                        "tag": "holidaysa_days",
+                        "patterns": [
+                                "Prophet Mohamad",
+                                "Prophet",
+                                "sep 27"
+
+                                
+                        ],
+                        "responses": [
+                                "Wed. Sep.27, Prophet Mohamad - عيد المولد النبوي الشريف Holiday "  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days1",
+                        "patterns": [
+                                "when is Semester 1 Exams?",
+                                "when is Semester 1 Exams of Cycle 3 and 4?",
+                                "Semester 1 Exams",
+                                "Nov. 6",
+                                "Nov.10" ,
+                                "WEEK 9"
+
+                                
+                        ],
+                        "responses": [
+                                "WEEK 9 Nov. 6- Nov.10"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days2",
+                        "patterns": [
+                                "Independence Day",
+                                "Nov 22"
+
+
+                                
+                        ],
+                        "responses": [
+                                "Wednesday, Nov, 22 Independence Day عيد الاستقلال"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days3",
+                        "patterns": [
+                                "Christmas Holiday",
+                                "Dec 23",
+                                "jan 7",
+                                "Christmas"
+
+
+                                
+                        ],
+                        "responses": [
+                                "Christmas Holiday from Dec 23 -Jan 7 عطلة الميلاد ورأس السنة"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days3",
+                        "patterns": [
+                                "Christmas Holiday",
+                                "Dec 23",
+                                "jan 7",
+                                "Christmas"
+
+
+                                
+                        ],
+                        "responses": [
+                                "Semester 2 Exams WEEK 19 Jan 15- Jan 19"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days4",
+                        "patterns": [
+                                "when is Semester 2 Exams?",
+                                "when midterm exams?",
+                                "Semester 2 Exams",
+                                "Jan 19",
+                                "Jan 15" ,
+                                "WEEK 19"
+
+                                
+                        ],
+                        "responses": [
+                                "WEEK 19 Jan 15- Jan 19 Semester 2 Exams"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days5",
+                        "patterns": [
+                                "when is Maroun Day?",
+                                "Maroun Day",
+                                "Feb 9"
+
+                                
+                        ],
+                        "responses": [
+                                "Saturday,Feb,9 Maroun Day"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days6",
+                        "patterns": [
+                                
+                                "Feb 14"
+
+                                
+                        ],
+                        "responses": [
+                                "Wednesday, Feb, 14 Holiday" 
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days7",
+                        "patterns": [
+                                
+                                "when is Teacher's Day",
+                                "when is Teachers Day",
+                                "Teacher Day",
+                                "march 9"
+
+                                
+                        ],
+                        "responses": [
+                                "Saturday, March ,9 Teacher's Day" 
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days7",
+                        "patterns": [
+                                
+                                "when is Teacher's Day",
+                                "when is Teachers Day",
+                                "Teacher Day",
+                                "march 9"
+
+                                
+                        ],
+                        "responses": [
+                                "Saturday, March ,9 Teacher's Day" 
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days8",
+                        "patterns": [
+                                "when is Semester 3 Exams?",
+                                "when is Semester 3 Exams of Cycle 3 and 4?",
+                                "Semester 3 Exams",
+                                "March 11",
+                                "March 5" ,
+                                "WEEK 27"
+
+                                
+                        ],
+                        "responses": [
+                                "WEEK 27 March 11- 15"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days10",
+                        "patterns": [
+                                "when is Easter Holiday?",
+                                "Easter Holiday",
+                                "March 28",
+                                "March 25" 
+
+                                
+                        ],
+                        "responses": [
+                                "Monday March ,25 Eid Thursday, March 28 Start of Easter Holiday"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days11",
+                        "patterns": [
+                                "when is Easter Holiday?",
+                                "Easter Holiday",
+                                "March 28",
+                                "March 25",
+                                "April 2 , End of Easter Holiday" 
+                                
+
+                                
+                        ],
+                        "responses": [
+                                "Monday March ,25 Eid Thursday, March 28 Start of Easter Holiday April 2 , End of Easter Holiday  "  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days12",
+                        "patterns": [
+                                "when is Eid Al Fotor ?",
+                                "Eid Al Fotor ",
+                                "april 10",
+                                "april 11",
+                                "april 12"
+                                
+
+                                
+                        ],
+                        "responses": [
+                                "April 10,11,12 Eid Al Fotor                                 "  
+                        ],
+                        "context": [
+                                ""
+                        ]
                 }
+                ,
+                {
+                        "tag": "holidaysa_days14",
+                        "patterns": [
+                                "when is Labors Day ?",
+                                "Labors Day ?",
+                                "May 1"
+
+
+                                
+
+                                
+                        ],
+                        "responses": [
+                                "Wednesday May 1 Labors Day Thursday May 2- Easter ( 2 )"  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                }
+                ,
+                {
+                        "tag": "holidaysa_days162",
+                        "patterns": [
+                                "when is Liberation Day?",
+                                "Liberation Day",
+                                "May 25"
+
+
+                                
+
+                                
+                        ],
+                        "responses": [
+                                "Saturday May 25, Liberation Day عيد المقاومة والتحرير                                 "  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days15",
+                        "patterns": [
+                                "when is Liberation Day?",
+                                "Liberation Day",
+                                "May 27",
+                                "May 31"
+                                
+
+
+                                
+
+                                
+                        ],
+                        "responses": [
+                                "WEEK 38 May 27-31                                 "  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "holidaysa_days45",
+                        "patterns": [
+                                "when is Semester final Exams?",
+                               "final Exams?",
+                                "Semester final Exams",
+                                "may 27",
+                                "Jan 31" ,
+                                "WEEK 38 "
+
+                                
+                        ],
+                        "responses": [
+                                "WEEK 38 May 27-31                                 "  
+                        ],
+                        "context": [
+                                ""
+                        ]
+                }
+
         ]
 }
