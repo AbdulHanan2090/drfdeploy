@@ -169,15 +169,18 @@ def predict_class(sentence, model):
     return return_list
     # function to get the response from the model
 
-
 def getResponse(ints, intents_json):
-    tag = ints[0]['intent']
-    list_of_intents = intents_json['intents']
-    for i in list_of_intents:
-        if (i['tag'] == tag):
-            result = random.choice(i['responses'])
-            break
-    return result
+    try:
+
+        tag = ints[0]['intent']
+        list_of_intents = intents_json['intents']
+        for i in list_of_intents:
+            if(i['tag']== tag):
+                result = random.choice(i['responses'])
+                break
+        return result
+    except:
+        return "Sorry I have no answer About that"
 
 
 def chatbot_response(text):
