@@ -220,43 +220,17 @@ def lec_process(filename, chunk_duration=90):
             lec_chunk = record.record(source, duration=chunk_duration)
 
             data_material += record.recognize_google(lec_chunk) + " "
+        os.remove('output_audio.wav')
             
         return data_material
     
 #lecturer summarizer part with different option
 
-def lec_summarizer(text,title,subtitle,summary_Size,language):
-    openai_api_key = "jjjj"
 
-    openai.api_key = openai_api_key
-
-    
-    lec_summary_prompt = f"Title: {title} \n\n Subtitle: {subtitle}\n\nTopic: {text}\n\n Please summarize the above text in {summary_Size} words also make it consice accurate and to the point."
-    summary_Size=int(summary_Size) 
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=lec_summary_prompt,
-        max_tokens=int(summary_Size) * 3
-    )
-
-    lec_summary = response.choices[0].text.strip()
-  
-# multiple language options for translation
-
-    Lec_Translation = f"Translate the following English text into {language} and also make sure its accurate and professional according to language ruels and native speaker:\n{ lec_summary}"
-    Lec_Translation_response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=Lec_Translation,
-        max_tokens=980
-    )
-
-    Lec_Translation_Summary = Lec_Translation_response.choices[0].text.strip()
-    os.remove('output_audio.wav')
-    return Lec_Translation_Summary
 
 class Filesummary(APIView):
     def get(self, request):
-        Overfilename=request.FILES['lectureFile'] 
+        Overfilename=request.FILES['video'] 
         output_audio = 'output_audio.wav'  # Specify the output WAV audio file path
       
         file_path = Path(Overfilename.temporary_file_path())
@@ -271,7 +245,9 @@ class Filesummary(APIView):
             print('Error:', e.stderr.decode())
 
         Text_extraction = lec_process("output_audio.wav")
-        translated_summary=lec_summarizer(Text_extraction,request.POST.get('topicname'),request.POST.get('subtopic'),request.POST.get('lenthtopic'),request.POST.get('language'))
         
 
 
+
+        
+        return Response({"Translation":Text_extraction,"status": status.HTTP_200_OK})
