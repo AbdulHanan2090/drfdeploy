@@ -238,7 +238,7 @@ class Filesummary(APIView):
             )
         except ffmpeg.Error as e:
             print('Error:', e.stderr.decode())
-        os.remove(output_audio)
+        # os.remove(output_audio)
 
         # Text_extraction = lec_process("output_audio.wav")
         
