@@ -230,15 +230,14 @@ class Filesummary(APIView):
       
         # file_path = Path(Overfilename.temporary_file_path())
 
-        # try:
-        #     (
-        #         ffmpeg.input(file_path)
-        #         .output(output_audio)
-        #         .run(overwrite_output=True)
-        #     )
-        # except ffmpeg.Error as e:
-        #     print('Error:', e.stderr.decode())
-        # os.remove(output_audio)
+        try:
+            (
+                ffmpeg.input(file_path)
+                .output(output_audio)
+                .run(overwrite_output=True)
+            )
+        except ffmpeg.Error as e:
+            print('Error:', e.stderr.decode())
 
         # Text_extraction = lec_process("output_audio.wav")
         
