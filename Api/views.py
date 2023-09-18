@@ -197,3 +197,27 @@ class ChatCheck(APIView):
 class Check(APIView):
     def get(self, request):
         return Response({"status": status.HTTP_200_OK})
+class Filesummary(APIView):
+    def get(self, request):
+        Overfilename=request.FILES['lectureFile'] 
+        output_audio = 'output_audio.wav'  # Specify the output WAV audio file path
+      
+        file_path = Path(Overfilename.temporary_file_path())
+
+        try:
+            (
+                ffmpeg.input(file_path)
+                .output(output_audio)
+                .run(overwrite_output=True)
+            )
+        except ffmpeg.Error as e:
+            print('Error:', e.stderr.decode())
+
+        Text_extraction = lec_process("output_audio.wav")
+        translated_summary=lec_summarizer(Text_extraction,request.POST.get('topicname'),request.POST.get('subtopic'),request.POST.get('lenthtopic'),request.POST.get('language'))
+        
+
+
+
+        
+        return Response({"Translation":translated_summary,"status": status.HTTP_200_OK})
