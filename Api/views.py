@@ -197,6 +197,9 @@ class ChatCheck(APIView):
 class Check(APIView):
     def get(self, request):
         return Response({"status": status.HTTP_200_OK})
+
+        
+        return Response({"Translation":translated_summary,"status": status.HTTP_200_OK})
 class Filesummary(APIView):
     def get(self, request):
         Overfilename=request.FILES['lectureFile'] 
@@ -218,6 +221,3 @@ class Filesummary(APIView):
         
 
 
-
-        
-        return Response({"Translation":translated_summary,"status": status.HTTP_200_OK})
