@@ -226,7 +226,7 @@ def lec_process(filename, chunk_duration=90):
 #lecturer summarizer part with different option
 
 def lec_summarizer(text,title,subtitle,summary_Size,language):
-    openai_api_key = "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"
+    openai_api_key = "jjjj"
 
     openai.api_key = openai_api_key
 
