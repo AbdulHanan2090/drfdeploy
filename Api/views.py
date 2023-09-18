@@ -246,4 +246,4 @@ class Filesummary(APIView):
 
 
         
-        return Response({"Translation":Text_extraction,"status": status.HTTP_200_OK})
+        return Response({"Translation":"Okay","status": status.HTTP_200_OK})
