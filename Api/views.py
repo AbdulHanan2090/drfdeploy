@@ -7,25 +7,27 @@ import json
 import pickle
 import numpy as np
 import random
-from keras.models import Sequential
-from keras.layers import Dense, Activation, Dropout
-from keras.optimizers import SGD
+import os
 from keras.models import load_model
+import ffmpeg
+import openai
+import os
 import openai
 import speech_recognition as sr
 from pydub.utils import mediainfo
 from pathlib import Path
+
 lemmatizer = WordNetLemmatizer()
-words = []
-classes = []
-documents = []
-ignore_words = ['?', '!']
+# words = []
+# classes = []
+# documents = []
+# ignore_words = ['?', '!']
 
 # data_file = open('intents.json', encoding='utf-8').read()
 # intents = json.loads(data_file)
-nltk.download('punkt')  # unsuperviesd
-nltk.download('wordnet')  # dict
-nltk.download('omw-1.4')  # VACABLARY
+# nltk.download('punkt')  # unsuperviesd
+# nltk.download('wordnet')  # dict
+# nltk.download('omw-1.4')  # VACABLARY
 # for intent in intents['intents']:
 #     for pattern in intent['patterns']:
 
@@ -172,18 +174,15 @@ def predict_class(sentence, model):
     return return_list
     # function to get the response from the model
 
-def getResponse(ints, intents_json):
-    try:
 
-        tag = ints[0]['intent']
-        list_of_intents = intents_json['intents']
-        for i in list_of_intents:
-            if(i['tag']== tag):
-                result = random.choice(i['responses'])
-                break
-        return result
-    except:
-        return "Sorry I have no answer About that"
+def getResponse(ints, intents_json):
+    tag = ints[0]['intent']
+    list_of_intents = intents_json['intents']
+    for i in list_of_intents:
+        if (i['tag'] == tag):
+            result = random.choice(i['responses'])
+            break
+    return result
 
 
 def chatbot_response(text):
@@ -200,9 +199,6 @@ class ChatCheck(APIView):
 class Check(APIView):
     def get(self, request):
         return Response({"status": status.HTTP_200_OK})
-
-        
-        return Response({"Translation":translated_summary,"status": status.HTTP_200_OK})
 def lec_process(filename, chunk_duration=90):
 
     record = sr.Recognizer()
@@ -220,7 +216,6 @@ def lec_process(filename, chunk_duration=90):
             lec_chunk = record.record(source, duration=chunk_duration)
 
             data_material += record.recognize_google(lec_chunk) + " "
-        os.remove('output_audio.wav')
             
         return data_material
     
