@@ -11,7 +11,10 @@ from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.optimizers import SGD
 from keras.models import load_model
-
+import openai
+import speech_recognition as sr
+from pydub.utils import mediainfo
+from pathlib import Path
 lemmatizer = WordNetLemmatizer()
 words = []
 classes = []
@@ -200,6 +203,57 @@ class Check(APIView):
 
         
         return Response({"Translation":translated_summary,"status": status.HTTP_200_OK})
+def lec_process(filename, chunk_duration=90):
+
+    record = sr.Recognizer()
+
+    with sr.AudioFile(filename) as source:
+
+        lec_data = mediainfo(filename)
+
+        lec_duration = int(float(lec_data['duration']))
+
+        data_material = ""
+
+        for i in range(0, lec_duration, chunk_duration):
+
+            lec_chunk = record.record(source, duration=chunk_duration)
+
+            data_material += record.recognize_google(lec_chunk) + " "
+            
+        return data_material
+    
+#lecturer summarizer part with different option
+
+def lec_summarizer(text,title,subtitle,summary_Size,language):
+    openai_api_key = "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"
+
+    openai.api_key = openai_api_key
+
+    
+    lec_summary_prompt = f"Title: {title} \n\n Subtitle: {subtitle}\n\nTopic: {text}\n\n Please summarize the above text in {summary_Size} words also make it consice accurate and to the point."
+    summary_Size=int(summary_Size) 
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=lec_summary_prompt,
+        max_tokens=int(summary_Size) * 3
+    )
+
+    lec_summary = response.choices[0].text.strip()
+  
+# multiple language options for translation
+
+    Lec_Translation = f"Translate the following English text into {language} and also make sure its accurate and professional according to language ruels and native speaker:\n{ lec_summary}"
+    Lec_Translation_response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=Lec_Translation,
+        max_tokens=980
+    )
+
+    Lec_Translation_Summary = Lec_Translation_response.choices[0].text.strip()
+    os.remove('output_audio.wav')
+    return Lec_Translation_Summary
+
 class Filesummary(APIView):
     def get(self, request):
         Overfilename=request.FILES['lectureFile'] 
