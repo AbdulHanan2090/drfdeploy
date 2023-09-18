@@ -224,25 +224,29 @@ def lec_process(filename, chunk_duration=90):
 
 
 class Filesummary(APIView):
-    def get(self, request):
-        Overfilename=request.FILES['video'] 
-        output_audio = 'output_audio.wav'  # Specify the output WAV audio file path
-      
-        file_path = Path(Overfilename.temporary_file_path())
-
+    def post(self, request):
         try:
-            (
-                ffmpeg.input(file_path)
-                .output(output_audio)
-                .run(overwrite_output=True)
-            )
-        except ffmpeg.Error as e:
-            print('Error:', e.stderr.decode())
+            uploaded_file = request.FILES['video']
+            # Assuming the file is in memory, you can read its content directly
+            file_content = uploaded_file.read()
 
-        # Text_extraction = lec_process("output_audio.wav")
-        
+            # Now you can process the file content as needed
+            # For example, you can save it to a temporary file or process it directly
 
+            # Save the content to a temporary file (optional)
+            with open('temp_video.mp4', 'wb') as temp_file:
+                temp_file.write(file_content)
 
+            # Process the temporary file or file_content as needed
 
-        
-        return Response({"Translation":"Okay","status": status.HTTP_200_OK})
+            # Example processing using ffmpeg
+            output_audio = 'output_audio.wav'
+            ffmpeg.input('temp_video.mp4').output(output_audio).run(overwrite_output=True)
+
+            # Example text extraction using lec_process
+            Text_extraction = lec_process(output_audio)
+
+            return Response({"Translation": Text_extraction, "status": status.HTTP_200_OK})
+        except Exception as e:
+            print('Error:', str(e))
+            return Response({"error": "An error occurred", "status": status.HTTP_400_BAD_REQUEST})
