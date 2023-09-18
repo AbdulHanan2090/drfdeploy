@@ -228,7 +228,7 @@ class Filesummary(APIView):
         Overfilename=request.FILES['video'] 
         output_audio = 'output_audio.wav'  # Specify the output WAV audio file path
       
-        # file_path = Path(Overfilename.temporary_file_path())
+        file_path = Path(Overfilename.temporary_file_path())
 
         try:
             (
