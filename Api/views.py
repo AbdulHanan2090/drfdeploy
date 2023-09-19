@@ -22,7 +22,9 @@ lemmatizer = WordNetLemmatizer()
 # classes = []
 # documents = []
 # ignore_words = ['?', '!']
-
+nltk.download('punkt')  # unsuperviesd
+nltk.download('wordnet')  # dict
+nltk.download('omw-1.4')  # VACABLARY
 # data_file = open('intents.json', encoding='utf-8').read()
 # intents = json.loads(data_file)
 # nltk.download('punkt')  # unsuperviesd
